@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery UI</title>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"
+    />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+    <script src="./js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/06_Interface.js"></script>
+    <style>
+      .divElement1 {
+        width: 300px;
+        height: 200px;
+        border: 4px solid green;
+        background: lightblue;
+        margin: 20px;
+        float: left;
+      }
+      .ulListSelect li {
+        width: 80%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        list-style: none;
+        cursor: pointer;
+      }
+      ul .ui-selecting {
+        background: green;
+      }
+      ul .ui-selected {
+        background: chocolate;
+      }
+      #divElementMove {
+        width: 50px;
+        padding: 50px;
+        border: 1px solid red;
+      }
+      #divArea {
+        width: 150px;
+        padding: 150px;
+        border: 1px solid orange;
+      }
+      .divElement1 {
+        background: pink;
+        float: none;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JQuery UI</h1>
+    </header>
+    <hr />
+    <h3>Tooltip</h3>
+    <a
+      href="#"
+      id="linkContact"
+      title="Login to the section Contact of this web"
+      >Contact</a
+    >
+    <a href="#" id="linkMenu" title="Login to the section Menu of this web"
+      >Contact</a
+    >
+    <a href="#" id="linkLogin" title="Login to the section Login of this web"
+      >Contact</a
+    >
+    <hr />
+    <h3>Dialog Box</h3>
+    <button id="buttonSendPopUp">Send me</button>
+    <div id="divPopUp" title="Are you sure?" style="display: none">
+      <p>If you continue the course you could learn a lot</p>
+    </div>
+    <hr />
+    <h3>Calendar</h3>
+    <input type="text" id="inputCalendar" />
+    <hr />
+    <h3>Tabs</h3>
+    <div id="divTabs">
+      <ul>
+        <li><a href="#tabs-1">Tab 1</a></li>
+        <li><a href="#tabs-2">Tab 2</a></li>
+        <li><a href="#tabs-3">Tab 3</a></li>
+      </ul>
+      <div id="tabs-1">Tab number 1</div>
+      <div id="tabs-2">Tab number 2</div>
+      <div id="tabs-3">Tab number 3</div>
+    </div>
+    <hr />
+    <div>
+      <button id="buttonEfectShow">To Show</button>
+      <div id="divBoxEfects" class="divBoxEfects divElement1"></div>
+      <br />
+      <div id="divElementMove"></div>
+      <br />
+      <div id="divArea"></div>
+    </div>
+
+    <div>
+      <ul class="ulListSelect">
+        <li>GTA 5</li>
+        <li>Need for Speed</li>
+        <li>Crash Bandicoot</li>
+        <li>Super Mario</li>
+        <li>Galaxia</li>
+      </ul>
+    </div>
+    <div class="divElement1">Hi I'm an element from the page 1</div>
+    <div class="divElement1">Hi I'm an element from the page 2</div>
+    <div class="divElement1">Hi I'm an element from the page 3</div>
+  </body>
+</html>
