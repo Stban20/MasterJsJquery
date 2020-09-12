@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax in JQuery</title>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/05_AjaxJQ.js"></script>
+    <style>
+      #divBox1 {
+        border: 2px solid green;
+        width: 250px;
+        height: 250px;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Request Ajax in JQuery</h1>
+    </header>
+    <div>
+      <form action="https://reqres.in/api/users" method="POST" id="form1">
+        <label for="fistName">Name:</label>
+        <input type="text" name="fistName" id="fistName" />
+        <label for="lastName">Surname:</label>
+        <input type="text" name="lastName" id="lastName" />
+        <input type="submit" name="" id="inputSubmit" value="Register" />
+      </form>
+      <br />
+    </div>
+    <div id="divBox1"></div>
+  </body>
+</html>
